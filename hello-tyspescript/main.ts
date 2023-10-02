@@ -1,0 +1,1 @@
+let minhaVar = 'Minha  variavel'
