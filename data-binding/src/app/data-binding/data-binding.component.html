@@ -1,5 +1,5 @@
 <section class="property-binding">
-    <article>
+   <!-- <article>
         <h3>Interpolation/ Interpolação</h3>
 
         <p>String renderizada com interpolação:{{ url }}</p>
@@ -20,5 +20,38 @@
         <img [src]="urlImagem" alt="Natureza"><br>
 
         <img bind-src="urlImagem" alt="Natureza">
+    </article> -->
+    <article>
+        <h3>Class e Style binding</h3>
+
+        <div>
+          Selecione uma classe:
+           <select #classe (change) ="0" >
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Alerta</option>
+                <option value="alert-danger">Erro</option>
+           </select>
+
+           <br><br>
+
+           <div class="alert" role="alert">
+            Sucesso
+          </div>
+
+          <div class="alert" role="alert">
+            Info
+          </div>
+
+          <div class="alert" role="alert">
+            Alerta
+          </div>
+
+          <div class="alert" role="alert">
+            Erro
+          </div>
+
+
+        </div>
     </article>
 </section>
