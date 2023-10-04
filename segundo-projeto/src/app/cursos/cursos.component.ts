@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { CursosService } from './cursos.service';
+
 @Component({
   selector: 'app-cursos',
   templateUrl: './cursos.component.html',
@@ -8,14 +10,18 @@ import { Component } from '@angular/core';
 export class CursosComponent {
   nomeGithub: string ;
 
-  cursos : string [] =['HTML', 'CSS' , 'JavaScript']
+  cursos : string [];
 
-  constructor () {
+  constructor (private cursosService:CursosService) {
     this.nomeGithub = 'https://github.com/WilliamLemosJR'
 
-    for (let i=0; i<this.cursos.length; i++){
+   /* for (let i=0; i<this.cursos.length; i++){
       let curso = this.cursos[i] ;
-    }
+    }*/
+
+    //var servico = new CursosService();
+
+    this.cursos =this.cursosService.getCursos();
   }
   
 }
