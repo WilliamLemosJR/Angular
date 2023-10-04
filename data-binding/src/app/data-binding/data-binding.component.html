@@ -21,7 +21,7 @@
 
         <img bind-src="urlImagem" alt="Natureza">
     </article> -->
-    <article>
+    <!--<article>
         <h3>Class e Style binding</h3>
 
         <div>
@@ -62,5 +62,26 @@
 
 
         </div>
+    </article>-->
+
+    <article>
+      <h3>event binding</h3>
+
+
+      <div>
+        <button (click)="botaoClicado()"
+         class="btn btn-primary" >
+          me clique!
+        </button>
+
+        <br><br>
+
+        <input type="text" name="chave" id="ichavve"
+        (keyup)="onKeyUp($event)">
+
+        <p>Valor atual : {{ valorAtual }}</p>
+      </div>
+
     </article>
+
 </section>

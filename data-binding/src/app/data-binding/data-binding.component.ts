@@ -13,12 +13,22 @@ export class DataBindingComponent {
 
   cursoAngular = true
 
+  valorAtual: any = ''
+
   getValor(){
     return 1
   }
 
   getCurtirCurso(){
     return true
+  }
+
+  botaoClicado() {
+    alert('Botão clicado!')
+  }
+
+  onKeyUp(evento:KeyboardEvent) {
+    this.valorAtual = (<HTMLInputElement>evento.target).value
   }
   
 }
