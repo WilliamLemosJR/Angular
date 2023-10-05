@@ -15,6 +15,12 @@ export class DataBindingComponent {
 
   valorAtual: any = ''
 
+  valorSalvo:  any = ''
+
+  isMouseOver:boolean = false
+
+
+
   getValor(){
     return 1
   }
@@ -29,6 +35,14 @@ export class DataBindingComponent {
 
   onKeyUp(evento:KeyboardEvent) {
     this.valorAtual = (<HTMLInputElement>evento.target).value
+  }
+
+  salvarValor(valor: any){
+    this.valorSalvo = valor
+  }
+
+  onMouseOverOut(){
+    this.isMouseOver =!this.isMouseOver
   }
   
 }
