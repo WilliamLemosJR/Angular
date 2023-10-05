@@ -64,7 +64,7 @@
         </div>
     </article>-->
 
-    <article>
+    <!--<article>
       <h3>event binding</h3>
 
 
@@ -93,4 +93,21 @@
 
     </article>
 
+</section>-->
+
+<section class="two-way-binding">
+
+  <article>
+
+    <h1>Two-way data binding</h1>
+
+    <div>
+
+      <input type="text" name="texto" id="itexto"
+      [value]="nome" (input)=" nome = $event.target.value" >
+
+
+      <p>Você digitou : {{ nome }} </p>
+    </div>
+  </article>
 </section>
