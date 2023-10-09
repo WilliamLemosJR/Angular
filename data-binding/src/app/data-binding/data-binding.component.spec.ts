@@ -18,4 +18,4 @@ describe('DataBindingComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+}); 

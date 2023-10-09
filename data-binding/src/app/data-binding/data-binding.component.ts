@@ -26,6 +26,8 @@ export class DataBindingComponent {
     idade: 20
   }
 
+  nomeDoCurso: string = 'Angular'
+
 
 
   getValor(){
